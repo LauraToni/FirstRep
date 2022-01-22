@@ -1,1 +1,12 @@
-
+numpy
+os
+PIL
+pandas
+matplotlib
+glob
+math
+numpy
+skimage.io
+sklearn.model_selection
+tensorflow
+nibabel 
