@@ -1,6 +1,4 @@
 numpy
-os
-PIL
 pandas
 matplotlib
 glob
