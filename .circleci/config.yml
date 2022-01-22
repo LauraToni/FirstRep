@@ -33,7 +33,3 @@ workflows:
   main:
     jobs:
       - build-and-test
-      - lint-and-coverage:
-          filters:
-            tags:
-              only: /.*/
