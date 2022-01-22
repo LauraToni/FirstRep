@@ -16,7 +16,7 @@ jobs:
          pip-dependency-file: requirements.txt
       - run:
           name: Run tests
-          command: python test/test_CNN.py
+          command: python test.py
 workflows:
   main:
     jobs:
