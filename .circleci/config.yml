@@ -1,17 +1,20 @@
 version: 2.1
 
 orbs:
-  python: circleci/python@0.3.2
-
+  python: circleci/python@1.2
 
 jobs:
   build-and-test:
-  executor: python/default
-  steps:
-    - checkout
-    - python/install-deps
-    - python/test
+    executor: python/default
+    steps:
+      - checkout
+      - python/install-packages:
+         pkg-manager: pip
+         pip-dependency-file: requirements.txt
+      - run:
+          name: Run tests
+          command: python3 test/test_CNN.py
 workflows:
   main:
-   jobs:
-    - build-and-test
+    jobs:
+      - build-and-test
