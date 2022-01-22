@@ -1,28 +1,7 @@
 import unittest
-import numpy as np
+import sys
 from cnn_da_testare import read_dataset
-import os
-import PIL
-from PIL import Image
-import pandas as pd
-import matplotlib.pyplot as plt
-from glob import glob
-import math
-import numpy as np
-import matplotlib.pyplot as plt
-from skimage.io import imread
-from sklearn.model_selection import train_test_split
-import tensorflow as tf
-
-from tensorflow import keras
-from tensorflow.keras import layers
-
-try:
-    import nibabel as nib
-except:
-    raise ImportError('Install NIBABEL')
-
-#from data_augmentation import VolumeAugmentation
+from data_augmentation import VolumeAugmentation
 
 dataset_path_AD_ROI = "AD_CTRL/AD_ROIL"
 dataset_path_CTRL_ROI = "AD_CTRL/CTRL_ROIL"
@@ -43,4 +22,4 @@ class TestCNN(unittest.TestCase):
 
 
 if __name__=='__main__':
-   unittest.main()
+   unittest.main(exit=not sys.flags.interactive)
