@@ -1,6 +1,6 @@
 import unittest
 import sys
-from cnn_da_testare import read_dataset
+from CNN import read_dataset
 from data_augmentation import VolumeAugmentation
 
 dataset_path_AD_ROI = "AD_CTRL/AD_ROIL"
