@@ -29,6 +29,8 @@ jobs:
           command: |
             coverage run
             coverage report
+      - store_test_results:
+         path: test-results
 workflows:
   main:
     jobs:
