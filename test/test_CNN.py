@@ -1,9 +1,9 @@
 import unittest
 import sys
 
-from ../CNN import normalize
-from ../input_dati import read_dataset, import_csv
-from ../data_augmentation import VolumeAugmentation
+from ..\CNN import normalize
+from ..\input_dati import read_dataset, import_csv
+from ..\data_augmentation import VolumeAugmentation
 
 class TestCNN(unittest.TestCase):
     """
