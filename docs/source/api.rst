@@ -5,3 +5,7 @@ API
    :toctree: generated
 
    lumache
+ 
+.. automodule:: data_augmentation
+   :members:
+ 
