@@ -1,7 +1,7 @@
 API
 ===
 
-.. autosummary::
-   :toctree: generated
+.. automodule::
+   :members: data_augmentation
 
-   lumache
+   
