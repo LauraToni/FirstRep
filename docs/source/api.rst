@@ -1,7 +1,7 @@
 API
 ===
 
-.. automodule::
-   :members: data_augmentation
+.. automodule:: data_augmentation
+   :members: 
 
    
