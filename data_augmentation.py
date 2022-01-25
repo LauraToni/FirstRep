@@ -18,7 +18,8 @@ class VolumeAugmentation():
     def __init__(self, x, y, shape):
         """
         Initialize the sequence
-        Parameters:
+        Parameters
+        ----------
         x : np.array
             array containing 3D images
         y : np.array
